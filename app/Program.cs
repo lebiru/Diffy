@@ -1,6 +1,12 @@
 ﻿using static SimpleExec.Command;
 
 var exitCode = 0;
+
+// select path of file1 from FileService from MinIO
+// select path of file2 from FileService from MinIO
+
+// ability to upload file from CLI to MinIO ? how to do that
+
 Run("compare.sh", "file1.txt file2.txt", handleExitCode: code => (exitCode = code) < 2);
 
 var inputsAreSame = exitCode & 0;
