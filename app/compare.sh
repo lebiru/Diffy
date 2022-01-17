@@ -1,2 +1,2 @@
-#!/bin/bashi
-diff test1.txt test2.txt
+#!/bin/bash
+diff $1 $2
