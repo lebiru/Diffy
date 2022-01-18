@@ -7,7 +7,7 @@ var exitCode = 0;
 
 // ability to upload file from CLI to MinIO ? how to do that
 
-Run("compare.sh", "file1.txt file2.txt", handleExitCode: code => (exitCode = code) < 2);
+Run("compare.sh", "file1.txt file2.txt", "/Users/lebiru/repo/Diffy/app/",  handleExitCode: code => (exitCode = code) < 2);
 
 var inputsAreSame = exitCode & 0;
 var inputsAreDiff = exitCode & 1;
